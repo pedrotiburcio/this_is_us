@@ -3,10 +3,1123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game of Thrones</title>
+    <title>This Is Us</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Minha página!</h1>
+    <header class="header">
+        <h1 class="header__title --title-big">This Is Us BR</h1>
+        <ul class="header__menu">
+            <li class="header__menu__item">
+                <a href="#" class="button --text">Assinar</a>
+            </li>
+            <li class="header__menu__item">
+                <a href="#" class="button --text">Entrar</a>
+            </li>
+        </ul>
+    </header>
+    <section class="hero">
+        <img src="src/images/this_is_us-hero.jpg" alt="Foto This Is Us">
+    </section>
+    <section class="seasons">
+        <h3 class="seasons__title --title-big">Todas as temporadas disponíveis</h3>
+        <nav class="seasons__menu">
+            <button data-tab-button="temporada1" class="--text seasons__menu__button seasons__menu__button--is-active">1 Temporada</button>
+            <button data-tab-button="temporada2" class="--text seasons__menu__button">2 Temporada</button>
+            <button data-tab-button="temporada3" class="--text seasons__menu__button">3 Temporada</button>
+            <button data-tab-button="temporada4" class="--text seasons__menu__button">4 Temporada</button>
+            <button data-tab-button="temporada5" class="--text seasons__menu__button">5 Temporada</button>
+            <button data-tab-button="temporada6" class="--text seasons__menu__button">6 Temporada</button>
+        </nav>
+        <ul data-tab-id="temporada1" class="seasons__list seasons__list--is-active">
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep1.jpg" alt="Foto Episódio 1">
+                <span class="seasons__list__episode__title --title">T1 EP.1 — Piloto</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep2.jpg" alt="Foto Episódio 2">
+                <span class="seasons__list__episode__title --title">T1 EP.2 — O Grande Trio</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>26 de setembro de 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep3.jpg" alt="Foto Episódio 3">
+                <span class="seasons__list__episode__title --title">T1 EP.3 — Kyle</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>10 de outubro de 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep4.jpg" alt="Foto Episódio 4">
+                <span class="seasons__list__episode__title --title">T1 EP.4 — A Piscina</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>17 de outubro de 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep5.jpg" alt="Foto Episódio 5">
+                <span class="seasons__list__episode__title --title">T1 EP.5 — A Estratégia</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>24 de outubro de 2016</p>
+                    <p>43min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep6.jpg" alt="Foto Episódio 6">
+                <span class="seasons__list__episode__title --title">T1 EP.6 — A Vida Profissional</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep7.jpg" alt="Foto Episódio 7">
+                <span class="seasons__list__episode__title --title">T1 EP.7 — A Melhor Máquina de Lavar Roupa do Mundo</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>
+                        43min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep8.jpg" alt="Foto Episódio 8">
+                <span class="seasons__list__episode__title --title">T1 EP.8 — Rick, O Peregrino</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep9.jpg" alt="Foto Episódio 9">
+                <span class="seasons__list__episode__title --title">T1 EP.9 — A Viagem</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep10.jpg" alt="Foto Episódio 10">
+                <span class="seasons__list__episode__title --title">T1 EP.10 — O Último Natal</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep11.jpg" alt="Foto Episódio 11">
+                <span class="seasons__list__episode__title --title">T1 EP.11 — O Certo a Se Fazer</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>42min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep12.jpg" alt="Foto Episódio 12">
+                <span class="seasons__list__episode__title --title">T1 EP.12 — O Grande Dia</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep13.jpg" alt="Foto Episódio 13">
+                <span class="seasons__list__episode__title --title">T1 EP.13 — Três Frases</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep14.jpg" alt="Foto Episódio 14">
+                <span class="seasons__list__episode__title --title">T1 EP.14 — Eu Escolho o Casamento</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep15.jpg" alt="Foto Episódio 15">
+                <span class="seasons__list__episode__title --title">T1 EP.15 — O Filho de Jack Pearson</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>43min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep16.jpg" alt="Foto Episódio 16">
+                <span class="seasons__list__episode__title --title">T1 EP.16 — Memphis</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep17.jpg" alt="Foto Episódio 17">
+                <span class="seasons__list__episode__title --title">T1 EP.17 — E Agora?</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada1/ep18.jpg" alt="Foto Episódio 18">
+                <span class="seasons__list__episode__title --title">T1 EP.18 — Moonshadow</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>44min</p>
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="temporada2" class="seasons__list"> 
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep1.jpg" alt="Foto Episódio 1">
+                <span class="seasons__list__episode__title --title">T2 EP.1 — Conselho de Pai</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>25 de setembro de 2017</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep2.jpg" alt="Foto Episódio 2">
+                <span class="seasons__list__episode__title --title">T2 EP.2 — Uma Coisa Muito Esplêndida</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>2 de outubro de 2017</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep3.jpg" alt="Foto Episódio 3">
+                <span class="seasons__list__episode__title --title">T2 EP.3 — Deja vu</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>9 de outubro de 2017</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep4.jpg" alt="Foto Episódio 4">
+                <span class="seasons__list__episode__title --title">T2 EP.4 — Continua Lá</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>16 de outubro de 2017</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep5.jpg" alt="Foto Episódio 5">
+                <span class="seasons__list__episode__title --title">T2 EP.5 — Irmãos</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>23 de outubro de 2017</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep6.jpg" alt="Foto Episódio 6">
+                <span class="seasons__list__episode__title --title">T2 EP.6 — Os Anos 20</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>30 de outubro de 2017</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep7.jpg" alt="Foto Episódio 7">
+                <span class="seasons__list__episode__title --title">T2 EP.7 — O Homem Mais Decepcionado</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>September 19, 2016</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep8.jpg" alt="Foto Episódio 8">
+                <span class="seasons__list__episode__title --title">T2 EP.8 — Número Um</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>13 de novembro de 2017</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep9.jpg" alt="Foto Episódio 9">
+                <span class="seasons__list__episode__title --title">T2 EP.9 — Número Dois</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>20 de novembro de 2017</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep10.jpg" alt="Foto Episódio 10">
+                <span class="seasons__list__episode__title --title">T2 EP.10 — Número Três</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>27 de novembro de 2017</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep11.jpg" alt="Foto Episódio 11">
+                <span class="seasons__list__episode__title --title">T2 EP.11 — A Quinta Roda</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>8 de janeiro de 2018</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep12.jpg" alt="Foto Episódio 12">
+                <span class="seasons__list__episode__title --title">T2 EP.12 — Clooney</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>15 de janeiro de 2018</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep13.jpg" alt="Foto Episódio 13">
+                <span class="seasons__list__episode__title --title">T2 EP.13 — Esse Será o Dia</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>22 de janeiro de 2018</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep14.jpg" alt="Foto Episódio 14">
+                <span class="seasons__list__episode__title --title">T2 EP.14 — Domingo de Super Bowl</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>3 de fevereiro de 2018</p>
+                    <p>48min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep15.jpg" alt="Foto Episódio 15">
+                <span class="seasons__list__episode__title --title">T2 EP.15 — O Carro</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>5 de fevereiro de 2018</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep16.jpg" alt="Foto Episódio 16">
+                <span class="seasons__list__episode__title --title">T2 EP.16 — Vegas, Meu Bemília.</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>26 de fevereiro de 2018</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep17.jpg" alt="Foto Episódio 17">
+                <span class="seasons__list__episode__title --title">T2 EP.17 — A Grande, Incrível, Bela Vida</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>5 de março de 2018</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada2/ep18.jpg" alt="Foto Episódio 18">
+                <span class="seasons__list__episode__title --title">T2 EP.18 — O Casamento</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>12 de março de 2018</p>
+                    <p>45min</p>
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="temporada3" class="seasons__list">
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep1.webp" alt="Foto Episódio 1">
+                <span class="seasons__list__episode__title --title">T3 EP.1 — Nove contos</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>24 de setembro de 2018</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep2.webp" alt="Foto Episódio 2">
+                <span class="seasons__list__episode__title --title">T3 EP.2 — Uma história da Filadélfia</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>1 de outubro de 2018</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep3.webp" alt="Foto Episódio 3">
+                <span class="seasons__list__episode__title --title">T3 EP.3 — Katies</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>8 de outubro de 2018</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep4.webp" alt="Foto Episódio 4">
+                <span class="seasons__list__episode__title --title">T3 EP.4 — Vietnã</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>15 de outubro de 2018</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep5.webp" alt="Foto Episódio 5">
+                <span class="seasons__list__episode__title --title">T3 EP.5 — Toby</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>22 de outubro de 2018</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep6.webp" alt="Foto Episódio 6">
+                <span class="seasons__list__episode__title --title">T3 EP.6 — Kamsahamnida</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>29 de outubro de 2018</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep7.webp" alt="Foto Episódio 7">
+                <span class="seasons__list__episode__title --title">T3 EP.7 — Às vezes</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>12 de novembro de 2018</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep8.webp" alt="Foto Episódio 8">
+                <span class="seasons__list__episode__title --title">T3 EP.8 — Seis dias de Ação de Graças</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>19 de novembro de 2018</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep9.webp" alt="Foto Episódio 9">
+                <span class="seasons__list__episode__title --title">T3 EP.9 — O começo é o fim é o começo</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>26 de novembro de 2018</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep10.webp" alt="Foto Episódio 10">
+                <span class="seasons__list__episode__title --title">T3 EP.10 — As últimas quatro semanas</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>14 de janeiro de 2019</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep11.webp" alt="Foto Episódio 11">
+                <span class="seasons__list__episode__title --title">T3 EP.11 — Songbird Road: Part 1</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>21 de janeiro de 2019</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep12.webp" alt="Foto Episódio 12">
+                <span class="seasons__list__episode__title --title">T3 EP.12 — Songbird Road: Part 2</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>11 de fevereiro de 2019</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep13.webp" alt="Foto Episódio 13">
+                <span class="seasons__list__episode__title --title">T3 EP.13 — A menina da ilha</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>18 de fevereiro de 2019</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep14.webp" alt="Foto Episódio 14">
+                <span class="seasons__list__episode__title --title">T3 EP.14 — Os formandos</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>4 de março de 2019</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep15.webp" alt="Foto Episódio 15">
+                <span class="seasons__list__episode__title --title">T3 EP.15 — A sala de espera</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>11 de março de 2019</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep16.webp" alt="Foto Episódio 16">
+                <span class="seasons__list__episode__title --title">T3 EP.16 — Não esconda o Sol</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>18 de março de 2019</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep17.webp" alt="Foto Episódio 17">
+                <span class="seasons__list__episode__title --title">T3 EP.17 — R & B</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>25 de março de 2019</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada3/ep18.webp" alt="Foto Episódio 18">
+                <span class="seasons__list__episode__title --title">T3 EP.18 — Ela</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>1 de abril de 2019</p>
+                    <p>46min</p>
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="temporada4" class="seasons__list">
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep1.webp" alt="Foto Episódio 1">
+                <span class="seasons__list__episode__title --title">T4 EP.1 — Estranhos</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>23 de setembro de 2019</p>
+                    <p>52min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep2.webp" alt="Foto Episódio 2">
+                <span class="seasons__list__episode__title --title">T4 EP.2 — A Piscina: Parte Dois</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>29 de setembro de 2019</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep3.webp" alt="Foto Episódio 3">
+                <span class="seasons__list__episode__title --title">T4 EP.3 — Descontrolado</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>6 de outubro de 2019</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep4.webp" alt="Foto Episódio 4">
+                <span class="seasons__list__episode__title --title">T4 EP.4 — Cara ou Coroa</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>14 de outubro de 2019</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep5.webp" alt="Foto Episódio 5">
+                <span class="seasons__list__episode__title --title">T4 EP.5 — Amor Como nos Livros</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>21 de outubro de 2019</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep6.webp" alt="Foto Episódio 6">
+                <span class="seasons__list__episode__title --title">T4 EP.6 — O Clube</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>28 de outubro de 2019</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep7.webp" alt="Foto Episódio 7">
+                <span class="seasons__list__episode__title --title">T4 EP.7 — O Jantar e O Encontro</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>4 de novembro de 2019</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep8.webp" alt="Foto Episódio 8">
+                <span class="seasons__list__episode__title --title">T4 EP.8 — Desculpas</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>11 de novembro de 2019</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep9.webp" alt="Foto Episódio 9">
+                <span class="seasons__list__episode__title --title">T4 EP.9 — Adeus, Marianne</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>18 de novembro de 2019</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep10.webp" alt="Foto Episódio 10">
+                                <span class="seasons__list__episode__title --title">T4 EP.10 — Luz e Sombras</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>13 de janeiro de 2020</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep11.webp" alt="Foto Episódio 11">
+                <span class="seasons__list__episode__title --title">T4 EP.11 — Uma Semana Infernal: Parte Um</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>19 de janeiro de 2020</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep12.webp" alt="Foto Episódio 12">
+                <span class="seasons__list__episode__title --title">T4 EP.12 — Uma Semana Infernal: Parte Dois</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>27 de janeiro de 2020</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep13.webp" alt="Foto Episódio 13">
+                <span class="seasons__list__episode__title --title">T4 EP.13 — Uma Semana Infernal: Parte Três</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>10 de fevereiro de 2020</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep14.webp" alt="Foto Episódio 14">
+                <span class="seasons__list__episode__title --title">T4 EP.14 — A Cabana</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>17 de fevereiro de 2020</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep15.webp" alt="Foto Episódio 15">
+                <span class="seasons__list__episode__title --title">T4 EP.15 — Nuvens</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>24 de fevereiro de 2020</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep16.webp" alt="Foto Episódio 16">
+                <span class="seasons__list__episode__title --title">T4 EP.16 — Nova Iorque, Nova Iorque, Nova Iorque</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>9 de março de 2020</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep17.webp" alt="Foto Episódio 17">
+                <span class="seasons__list__episode__title --title">T4 EP.17 — Depois do Incêndio</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>16 de março de 2020</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada4/ep18.webp" alt="Foto Episódio 18">
+                <span class="seasons__list__episode__title --title">T4 EP.18 — Estranhos: Parte Dois</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>23 de março de 2020</p>
+                    <p>47min</p>
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="temporada5" class="seasons__list">
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep1.webp" alt="Foto Episódio 1">
+                <span class="seasons__list__episode__title --title">T5 EP.1 — Quarenta: Parte 1</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>26 de outubro de 2020</p>
+                    <p>47min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep2.webp" alt="Foto Episódio 2">
+                <span class="seasons__list__episode__title --title">T5 EP.2 — Quarenta: Parte 2</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>26 de outubro de 2020</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep3.webp" alt="Foto Episódio 3">
+                <span class="seasons__list__episode__title --title">T5 EP.3 — Mudanças</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>9 de novembro de 2020</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep4.webp" alt="Foto Episódio 4">
+                <span class="seasons__list__episode__title --title">T5 EP.4 — Honestamente</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>16 de novembro de 2020</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep5.webp" alt="Foto Episódio 5">
+                <span class="seasons__list__episode__title --title">T5 EP.5 — Uma Longa Estrada Para Casa</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>4 de janeiro de 2021
+                    </p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep6.webp" alt="Foto Episódio 6">
+                <span class="seasons__list__episode__title --title">T5 EP.6 — Mãe Biológica</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>11 de janeiro de 2021</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep7.webp" alt="Foto Episódio 7">
+                <span class="seasons__list__episode__title --title">T5 EP.7 — Lá</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>8 de fevereiro de 2021</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep8.webp" alt="Foto Episódio 8">
+                <span class="seasons__list__episode__title --title">T5 EP.8 — No Quarto</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>15 de fevereiro de 2021</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep9.webp" alt="Foto Episódio 9">
+                <span class="seasons__list__episode__title --title">T5 EP.9 — The Ride</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>22 de fevereiro de 2021</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep10.webp" alt="Foto Episódio 10">
+                <span class="seasons__list__episode__title --title">T5 EP.10 — Deixa Comigo</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>15 de março de 2021</p>
+                    <p>43min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep11.webp" alt="Foto Episódio 11">
+                <span class="seasons__list__episode__title --title">T5 EP.11 — Um Passo Pequeno</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>22 de março de 2021</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep12.webp" alt="Foto Episódio 12">
+                <span class="seasons__list__episode__title --title">T5 EP.12 — Ambas podem ser verdadeiras</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>5 de abril de 2021</p>
+                    <p>43min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep13.webp" alt="Foto Episódio 13">
+                <span class="seasons__list__episode__title --title">T5 EP.13 — Amor Fraterno</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>12 de abril de 2021</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep14.webp" alt="Foto Episódio 14">
+                <span class="seasons__list__episode__title --title">T5 EP.14 — A Música e o Espelho</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>10 de maio de 2021</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep15.webp" alt="Foto Episódio 15">
+                <span class="seasons__list__episode__title --title">T5 EP.15 — Jerry 2.0</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>17 de maio de 2021</p>
+                    <p>45min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada5/ep16.webp" alt="Foto Episódio 16">
+                <span class="seasons__list__episode__title --title">T5 EP.16 — Os Adirondacks</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>24 de maio de 2021</p>
+                    <p>45min</p>
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="temporada6" class="seasons__list">
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep1.webp" alt="Foto Episódio 1">
+                <span class="seasons__list__episode__title --title">T6 EP.1 — The Challenger</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>3 de janeiro de 2022</p>
+                    <p>47min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep2.webp" alt="Foto Episódio 2">
+                <span class="seasons__list__episode__title --title">T6 EP.2 — One Giant Leap</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>10 de janeiro de 2022</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep3.webp" alt="Foto Episódio 3">
+                <span class="seasons__list__episode__title --title">T6 EP.3 — Four Fathers</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>17 de janeiro de 2022</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep4.webp" alt="Foto Episódio 4">
+                <span class="seasons__list__episode__title --title">T6 EP.4 — Don’t Let Me Keep You</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>24 de janeiro de 2022</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep5.webp" alt="Foto Episódio 5">
+                <span class="seasons__list__episode__title --title">T6 EP.5 — Heart and Soul</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>31 de janeiro de 2022</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep6.webp" alt="Foto Episódio 6">
+                <span class="seasons__list__episode__title --title">T6 EP.6 — Our Little Island Girl: Part Two</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>21 de fevereiro de 2022</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep7.webp" alt="Foto Episódio 7">
+                <span class="seasons__list__episode__title --title">T6 EP.7 — Taboo</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>7 de março de 2022</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep8.webp" alt="Foto Episódio 8">
+                <span class="seasons__list__episode__title --title">T6 EP.8 — The Guitar Man</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>14 de março de 2022</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep9.webp" alt="Foto Episódio 9">
+                <span class="seasons__list__episode__title --title">T6 EP.9 — The Hill</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>21 de março de 2022</p>
+                    <p>43min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep10.webp" alt="Foto Episódio 10">
+                <span class="seasons__list__episode__title --title">T6 EP.10 — Every Version of You</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>28 de março de 2022</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep11.webp" alt="Foto Episódio 11">
+                <span class="seasons__list__episode__title --title">T6 EP.11 — Saturday in the Park</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>5 de abril de 2022</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep12.webp" alt="Foto Episódio 12">
+                <span class="seasons__list__episode__title --title">T6 EP.12 — Katoby</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>11 de abril de 2022</p>
+                    <p>43min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep13.webp" alt="Foto Episódio 13">
+                <span class="seasons__list__episode__title --title">T6 EP.13 — Day of the Wedding</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>18 de abril de 2022</p>
+                    <p>43min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep14.webp" alt="Foto Episódio 14">
+                <span class="seasons__list__episode__title --title">T6 EP.14 — The Night Before the Wedding</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>25 de abril de 2022</p>
+                    <p>43min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep15.webp" alt="Foto Episódio 15">
+                <span class="seasons__list__episode__title --title">T6 EP.15 — Miguel</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>2 de maio de 2022</p>
+                    <p>44min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep16.webp" alt="Foto Episódio 16">
+                <span class="seasons__list__episode__title --title">T6 EP.16 — Family Meeting</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>9 de maio de 2022</p>
+                    <p>43min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep17.webp" alt="Foto Episódio 17">
+                <span class="seasons__list__episode__title --title">T6 EP.17 — The Train</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>16 de maio de 2022</p>
+                    <p>46min</p>
+                </div>
+            </li>
+            <li class="seasons__list__episode">
+                <img src="./dist/images/temporada6/ep18.webp" alt="Foto Episódio 18">
+                <span class="seasons__list__episode__title --title">T6 EP.18 — Us</span> 
+                <br>
+                <div class="seasons__list__episode__info --text-small">
+                    <p>23 de maio de 2022</p>
+                    <p>45min</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="faq__title --title-big">Curiosidades da Série</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question --text-big" data-faq-question>
+                    <span>A origem</span>
+                </div>
+                <div class="faq__questions__item__answer --text-big">
+                    <p>
+                        This Is Us foi escrita por seu criador, Dan Fogelman, para ser um longa-metragem com Jack e Rebecca Pearson dando à luz a óctuplos. Mais tarde, porém, ele percebeu que a história seria contada melhor não em um filme, mas em uma série, explicou ele para a revista Cosmopolitan.
+                    </p>
+                    <p>
+                        "Eu fiquei muito próximo desses personagens e não quis dar um fim definitivo a eles. Eu queria fazer essa história contínua - o que parece muito mais com uma série", disse Fogelman.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question --text-big" data-faq-question>
+                    <span>Título diferente</span>
+                </div>
+                <div class="faq__questions__item__answer --text-big">
+                    <p>
+                        Segundo a revista “Glamour”, a série também se chamaria “36” por ser a idade com que os personagens principais começam a história.
+                    </p>
+                    <p>
+                        No entanto, os produtores gostaram mais da sonoridade do título This is Us e depois de alguns debates, eles decidiram por ficar com esse nome.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question --text-big" data-faq-question>
+                    <span>Como Mandy Moore viaja no tempo?</span>
+                </div>
+                <div class="faq__questions__item__answer --text-big">
+                    <p>
+                        A multitalentosa Mandy Moore interpreta a matriarca da família em todas as eras do programa, começando como uma jovem ingênua em seus 20 anos e continuando como uma sábia mulher de 60 anos.
+                    </p>
+                    <p>
+                        Embora Rebecca se torne indiscutivelmente a personagem mais velha em This Is Us, Mandy é na verdade a atriz mais jovem entre os Pearsons atuais. Para interpretar seu papel, a atriz passa quatro horas na cadeira de maquiagem.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question --text-big" data-faq-question>
+                    <span>O carro de Jack é o carro de Milo Ventimiglia</span>
+                </div>
+                <div class="faq__questions__item__answer --text-big">
+                    <p>
+                        Em This Is Us, a família Pearson comprou um carro novo antes de Jack morrer. No entanto, no início da história, eles andavam em um carro mais velho — um Chevelle preto.
+                    </p>
+                    <p>
+                        Embora Rebecca se torne indiscutivelmente a personagem mais velha em This Is Us, Mandy é na verdade a atriz mais jovem entre os Pearsons atuais. Para interpretar seu papel, a atriz passa quatro horas na cadeira de maquiagem.
+                    </p>
+                    <p>
+                        Já que o carro era do próprio Ventimiglia e se encaixava na época em que se passa a primeira parte da história, os produtores concordaram. Além disso, o dinheiro que o ator recebeu por “alugar” seu carro para o programa foi usado para a compra de lanches e caminhões de café para quem trabalhava no set.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question --text-big" data-faq-question>
+                    <span>Como Randall e Beth se conheceram em This Is Us e na vida real</span>
+                </div>
+                <div class="faq__questions__item__answer --text-big">
+                    <p>
+                        Em This Is Us, o adulto Randall (Sterling K. Brown) e sua futura esposa Beth (Susan Kelechi Walson) se conhecem durante uma reunião de calouros da faculdade. Os personagens, na época, estavam matriculados na Carnegie Mellon University, de acordo com a IMDb. A escola fica em Pittsburgh, onde Randall cresceu.
+                    </p>
+                    <p>
+                        No que foi possivelmente mera coincidência, os dois atores também se conheceram da mesma forma quando estavam na mesma faculdade. Na vida real, a dupla frequentou a Tisch School of Arts da Universidade de Nova York.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question --text-big" data-faq-question>
+                    <span>Como a morte de Jack Pearson foi escondida</span>
+                </div>
+                <div class="faq__questions__item__answer --text-big">
+                    <p>
+                        A morte de Jack na segunda temporada foi um dos momentos mais chocantes da série e por isso foi um dos segredos mais bem guardados pelo elenco e equipe antes de acontecer.
+                    </p>
+                    <p>
+                        Para evitar spoilers, todas as pessoas em This Is Us - de membros da equipe a figurantes e assim por diante - foram obrigadas a assinar acordos de sigilo, de acordo com o The Hollywood Reporter.
+                    </p>
+                    <p>
+                        Além disso, páginas de script foram editadas e codinomes foram usados para restringir qualquer intervenção indesejada. E as cenas do episódio não foram filmadas em ordem caso algum paparazzi aparecesse durante as filmagens
+                    </p>
+                    <p>
+                        “Foi como se de repente estivéssemos em Lost”, brincou Mandy Moore.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <p class="text">© 2023 This Is Us, BR. Todos os direitos reservados.</p>
+        <ul class="footer__images">
+            <li>
+                <a href="#">
+                    <img src="./src/images/redes_sociais/facebook.png" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./src/images/redes_sociais/twitter.png" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./src/images/redes_sociais/instagram.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./src/images/redes_sociais/youtube.png" alt="Youtube">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>

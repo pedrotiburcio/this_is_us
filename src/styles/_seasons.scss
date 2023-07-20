@@ -1,0 +1,98 @@
+.seasons {
+    padding: 4vw 2vw;
+    background-color: #03011f;
+
+    &__title {
+        color:#e1e0f0;
+        text-align: center;
+        margin-bottom: 24px;
+
+        @media (max-width: 768px) {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 1023px) {
+            overflow-x: scroll;
+            padding-left: 148px;
+        }
+
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 16px;
+            padding-left: 0;
+        }
+
+        @media (max-width: 768px) and (orientation: portrait) {
+            padding-left: 50px;
+        }
+
+        &__button {
+            margin: 48px 16px;
+            padding: 8px;
+            border: none;
+            border-bottom: solid 3px transparent;
+            color: #6457f3;
+            background-color: transparent;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &--is-active {
+                border-color: #6457f3;
+            }
+
+            &:hover {
+                color: #b8b1ff;
+            }
+
+            @media (max-width: 768px) {
+                margin: 8px;
+            }
+
+        }
+    }
+
+    &__list {
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 16px;
+
+        @media (max-width: 1023px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__episode {
+            margin: 12px;
+            cursor: pointer;
+
+            img {
+                max-width: 100%;
+                border-radius: 4px;
+            }
+
+            &__title {
+                color: #b8b1ff;
+            }
+
+            &__info {
+                color: #e1e0f0;
+                padding: 4px;
+            }
+        }
+    }
+    
+}

@@ -1,5 +1,41 @@
-$bgColor: rgb(24, 186, 250);
+@use 'header';
+@use 'hero';
+@use 'seasons';
+@use 'faq';
+@use 'footer';
 
-body {
-    background-color: $bgColor;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin title($font-size: 18px){
+    font-size: $font-size;
+}
+
+@mixin text($font-size: 16px){
+    font-size: $font-size;
+}
+
+.--title-big {
+    @include title(32px);
+}
+
+.--title {
+    @include title;
+}
+
+.--text-big {
+    @include text(18px);
+}
+
+.--text {
+    @include text;
+}
+
+.--text-small {
+    @include text(14px);
 }
